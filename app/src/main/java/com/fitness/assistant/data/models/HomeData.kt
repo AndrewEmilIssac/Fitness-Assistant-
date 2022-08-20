@@ -1,0 +1,1 @@
+/* * Copyright (c) 2021 Ruslan Potekhin */package com.fitness.assistant.data.modelsimport com.fitness.assistant.data.models.user.UserLeftValuesdata class HomeData(val userLeftValues: UserLeftValues, val burnCalories: String)

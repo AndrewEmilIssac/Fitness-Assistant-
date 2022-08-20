@@ -1,0 +1,1 @@
+package com.fitness.assistant.data.models.userenum class UserGoal {    LOSE,    EAT_HEALTHIER,    GAIN}

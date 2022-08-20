@@ -1,0 +1,1 @@
+package com.fitness.assistant.data.models.userclass UserLeftValues(    var calories: Triple<Int, Boolean, Int> = Triple(0, false, 0),    var proteinsLeft: Triple<Int, Boolean, Int> = Triple(0, false, 0),    var carbsLeft: Triple<Int, Boolean, Int> = Triple(0, false, 0),    var fatsLeft: Triple<Int, Boolean, Int> = Triple(0, false, 0),    var burnedCalories:String = "0")

@@ -1,0 +1,1 @@
+package com.fitness.assistant.data.models.userenum class UserDeleteOperation{    SUCCESS, FAILED, REAUTH}

@@ -1,0 +1,1 @@
+package com.fitness.assistant.data.modelsimport androidx.annotation.Keep/** * Class wrapper for custom products when loading from Firebase */@Keepdata class FoodProductFBWrapper constructor(val list: List<FoodProduct> = listOf())

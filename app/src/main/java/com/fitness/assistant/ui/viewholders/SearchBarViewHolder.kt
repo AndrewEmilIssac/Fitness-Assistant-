@@ -1,0 +1,1 @@
+package com.fitness.assistant.ui.viewholdersimport android.view.Viewimport androidx.recyclerview.widget.RecyclerViewclass SearchBarViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)

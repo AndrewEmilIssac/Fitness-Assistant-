@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.fitness.assistant.viewModels.HomeViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/up_menu_calories_text"
+                style="@style/MainTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="78dp"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:text="@{String.valueOf(viewmodel.userLeftValues.calories.first.intValue())}"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/fragment_home_up_pBar"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_home_up_pBar"
+                app:layout_constraintStart_toStartOf="@+id/fragment_home_up_pBar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/up_menu_sub_text"
+                style="@style/MainTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                app:kcalLeftOrOver="@{viewmodel.userLeftValues.calories.second.booleanValue()}"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_home_up_pBar"
+                app:layout_constraintStart_toStartOf="@+id/fragment_home_up_pBar"
+                app:layout_constraintTop_toBottomOf="@id/up_menu_calories_text" />
+
+            <ProgressBar
+                android:id="@+id/fragment_home_up_pBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:paddingBottom="60dp"
+                android:progressDrawable="@drawable/circleprogressbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ProgressBar>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/up_menu_carbs_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/carbs"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@id/up_menu_carbs_bar"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/up_menu_carbs_bar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="2.5dp"
+                        android:layout_marginTop="10dp"
+                        android:progressDrawable="@drawable/progressbar"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/up_menu_carbs_text" />
+
+                    <TextView
+                        android:id="@+id/up_menu_carbs_left"
+                        nutrientLeftOrOver="@{viewmodel.userLeftValues.carbsLeft}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:maxWidth="80dp"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@id/up_menu_carbs_bar"
+                        app:layout_constraintTop_toBottomOf="@+id/up_menu_carbs_bar" />
+                </LinearLayout>
+
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="2.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:progressDrawable="@drawable/progressbar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/up_menu_proteins_text" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/up_menu_proteins_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/proteins"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@id/up_menu_proteins_bar"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/up_menu_proteins_bar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="2.5dp"
+                        android:layout_marginTop="10dp"
+                        android:progressDrawable="@drawable/progressbar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/up_menu_proteins_text" />
+
+                    <TextView
+                        android:id="@+id/up_menu_proteins_left"
+                        nutrientLeftOrOver="@{viewmodel.userLeftValues.proteinsLeft}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:maxWidth="80dp"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@id/up_menu_proteins_bar"
+                        app:layout_constraintTop_toBottomOf="@+id/up_menu_proteins_bar" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:layout_marginVertical="10dp"
+                android:progressDrawable="@drawable/progressbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/up_menu_proteins_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/up_menu_fats_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fats"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@id/up_menu_fats_bar"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ProgressBar
+                        android:id="@+id/up_menu_fats_bar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="2.5dp"
+                        android:layout_marginTop="10dp"
+                        android:progressDrawable="@drawable/progressbar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/up_menu_fats_text" />
+
+
+                    <TextView
+                        android:id="@+id/up_menu_fats_left"
+                        nutrientLeftOrOver="@{viewmodel.userLeftValues.fatsLeft}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:maxWidth="80dp"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@id/up_menu_fats_bar"
+                        app:layout_constraintTop_toBottomOf="@+id/up_menu_fats_bar" />
+                </LinearLayout>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="2.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:progressDrawable="@drawable/progressbar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/up_menu_proteins_text" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/up_menu_burned_calories_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/burned_calories"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorText"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@id/up_menu_fats_bar"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/up_menu_burned_calories_left"
+                        android:text="@{viewmodel.userBurnedCalories}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:maxWidth="80dp"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@id/up_menu_fats_bar"
+                        app:layout_constraintTop_toBottomOf="@+id/up_menu_fats_bar" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

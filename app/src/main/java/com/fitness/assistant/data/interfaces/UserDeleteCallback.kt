@@ -1,0 +1,1 @@
+package com.fitness.assistant.data.interfacesinterface UserDeleteCallback{    fun onDeletionSuccess()    fun onDeletionError()    fun reauthRequired()}

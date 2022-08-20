@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.AppIntro:AppIntro:4.2.3@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/5778774a055097fb4862f12c70af27cd/jetified-AppIntro-4.2.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/5778774a055097fb4862f12c70af27cd/jetified-AppIntro-4.2.3/res" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/5778774a055097fb4862f12c70af27cd/jetified-AppIntro-4.2.3/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/d91022ba06cb095fef840ea1ddf7c3fb/jetified-AppIntro-4.2.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/d91022ba06cb095fef840ea1ddf7c3fb/jetified-AppIntro-4.2.3/res" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/d91022ba06cb095fef840ea1ddf7c3fb/jetified-AppIntro-4.2.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d91022ba06cb095fef840ea1ddf7c3fb/jetified-AppIntro-4.2.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d91022ba06cb095fef840ea1ddf7c3fb/jetified-AppIntro-4.2.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d91022ba06cb095fef840ea1ddf7c3fb/jetified-AppIntro-4.2.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef6949e6d43a9e2895ded9ef49fcba8d/jetified-AppIntro-4.2.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef6949e6d43a9e2895ded9ef49fcba8d/jetified-AppIntro-4.2.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef6949e6d43a9e2895ded9ef49fcba8d/jetified-AppIntro-4.2.3/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.github.AppIntro/AppIntro/4.2.3/c9873c2d1aba7db718669a729a458eabf7d23347/AppIntro-4.2.3-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.AppIntro/AppIntro/4.2.3/c9873c2d1aba7db718669a729a458eabf7d23347/AppIntro-4.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

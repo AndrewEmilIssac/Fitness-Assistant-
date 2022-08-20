@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "734722716039",
+    "project_id": "fitness-assistant-1fd9e",
+    "storage_bucket": "fitness-assistant-1fd9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734722716039:android:39dbcd1307f6fe5425e322",
+        "android_client_info": {
+          "package_name": "com.fitness.assistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734722716039-ogo28hi3qg127uh5gitjnjdb50prfrcs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fitness.assistant",
+            "certificate_hash": "db9cc02bd53415dbdd2bc9ea7a8bbeb15d3d33fa"
+          }
+        },
+        {
+          "client_id": "734722716039-gf5hmk5oj3hmam6c65rkv7qogi2ne0vi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuka-ohmzadR0CdOJsqGoxVlKTxvQFkzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734722716039-gf5hmk5oj3hmam6c65rkv7qogi2ne0vi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

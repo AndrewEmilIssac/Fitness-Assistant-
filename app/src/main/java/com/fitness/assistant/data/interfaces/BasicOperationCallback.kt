@@ -1,0 +1,1 @@
+package com.fitness.assistant.data.interfacesinterface BasicOperationCallback {    fun onSuccess()    fun onFailure()}

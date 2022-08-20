@@ -1,0 +1,1 @@
+package com.fitness.assistant.data.api.models.recipedetailed.nninterface RecipeDetailedResponseI {    var nutrition: Nutrition    var title: String}
